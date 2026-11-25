@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Love for My Friend 🐱</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #fff0f6, #ffe4ec, #fff5f8);
+    color: #754b60;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 20px;
+    animation: float 8s linear infinite;
+    opacity: .5;
+    z-index: -1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+    20% { opacity: .7; }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 65px 20px 25px;
+}
+
+.tag {
+    display: inline-block;
+    background: #ffffffa8;
+    padding: 9px 20px;
+    border-radius: 30px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(45px, 10vw, 75px);
+    color: #d66b99;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.cat {
+    font-size: 100px;
+    margin: 25px auto;
+    animation: bounce 2.5s infinite;
+    display: inline-block;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffffb8;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 22px 0;
+    box-shadow: 0 12px 35px #e8a9c526;
+    text-align: center;
+}
+
+.card h2 {
+    color: #d66b99;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.cats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.cat-box {
+    background: #fff0f6;
+    border-radius: 20px;
+    padding: 20px 10px;
+    transition: .3s;
+}
+
+.cat-box:hover {
+    transform: translateY(-8px) rotate(-2deg);
+}
+
+.cat-box .emoji {
+    font-size: 45px;
+}
+
+.cat-box p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+button {
+    background: linear-gradient(135deg, #f28ab4, #d86f9c);
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 6px 18px #e68bb53b;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+#secret {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff0f6;
+    border-radius: 18px;
+    animation: appear .6s;
+}
+
+@keyframes appear {
+    from {opacity: 0; transform: translateY(15px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 13px;
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #d66b99;
+    margin-top: 10px;
+}
+
+@media(max-width: 500px) {
+    .cats {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        padding: 23px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <span class="tag">A LITTLE WEBSITE MADE WITH LOVE 💗</span>
+
+    <h1>For My Lovely Friend</h1>
+
+    <p class="subtitle">
+        A tiny corner of the internet,<br>
+        made just to make you smile 🌷
+    </p>
+
+    <div class="cat">🐱</div>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Hey, Bestie! 💕</h2>
+
+        <p>
+            Some people make ordinary days feel special.
+            You're one of those people.
+            This little website is a reminder that
+            you deserve happiness, smiles, kindness
+            and all the beautiful things in life.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Little Cat Family 🐾</h2>
+
+        <div class="cats">
+            <div class="cat-box">
+                <div class="emoji">🐱</div>
+                <p>Sending hugs</p>
+            </div>
+
+            <div class="cat-box">
+                <div class="emoji">😽</div>
+                <p>Sending kisses</p>
+            </div>
+
+            <div class="cat-box">
+                <div class="emoji">🐈</div>
+                <p>Stay happy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>A Little Reminder 🌸</h2>
+
+        <p>
+            You are precious.<br>
+            You are enough.<br>
+            Your smile matters.<br>
+            And you deserve a beautiful life. 💗
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Open Your Surprise 🎁</h2>
+
+        <p>There's a little message hidden here for you.</p>
+
+        <button onclick="showSecret()">
+            Open My Message 💌
+        </button>
+
+        <div id="secret">
+            <p>
+                No matter how busy life gets,
+                I hope you never forget how special you are.
+                Keep smiling, keep dreaming,
+                and never stop being your adorable self. 🐱💕
+                <br><br>
+                Sending lots of love and virtual cat hugs! 🐾
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Press for Happiness 💖</h2>
+
+        <button onclick="sendHearts()">
+            Send Hearts 💗
+        </button>
+
+        <p id="heartMessage"></p>
+    </div>
+
+</div>
+
+<footer>
+    Made with love, little cats & lots of pink 🐱🌷
+
+    <div class="signature">
+        — Yashita 💗
+    </div>
+
+    <p style="margin-top:15px;">
+        You're someone's favourite human. Never forget that.
+    </p>
+</footer>
+
+<script>
+function showSecret() {
+    const message = document.getElementById("secret");
+
+    message.style.display = "block";
+
+    message.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
+
+function sendHearts() {
+    document.getElementById("heartMessage").innerHTML =
+        "You received 1000 virtual hugs & hearts! 💗🐱✨";
+
+    for(let i = 0; i < 25; i++) {
+        createHeart();
+    }
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+
+    const emojis = ["💗", "💕", "🌸", "🐱", "✨", "💖"];
+    heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (4 + Math.random() * 5) + "s";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 9000);
+}
+
+// Background floating hearts
+setInterval(createHeart, 1200);
+</script>
+
+</body>
+</html>
